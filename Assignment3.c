@@ -1,3 +1,5 @@
+#include <stdio.h>  
+
 void swap(int *xp, int *yp)
 {
     int temp = *xp;
@@ -5,7 +7,7 @@ void swap(int *xp, int *yp)
     *yp = temp;
 }
 
-void bubbleSort(int arr[], int n)
+void bubblesort(int arr[], int n)
 {
    int i, j;
    for (i = 0; i < n-1; i++)
@@ -17,15 +19,15 @@ void bubbleSort(int arr[], int n)
 int main()
 {
     int n,i;
-    printf("Enter the number of array element");
+    printf("Enter the no. of array element");
     scanf("%d",&n);
-    int number[n];
+    int num[n];
     for (i=0;i<n;i++){
-        scanf("%d",&number[i]);
+        scanf("%d",&num[i]);
     }
-    bubbleSort(number, n);
+    bubblesort(num, n);
     for (i=0;i<n;i++){
-        printf("%d",number[i]);
+        printf("%d",num[i]);
         printf(" ");
     }
     return 0;
